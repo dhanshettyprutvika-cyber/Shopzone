@@ -1,9 +1,3 @@
-/* ==========================================================================
-   ShopZone — shared product data
-   Loaded by both index.html (catalog) and product.html (detail page).
-   Plain JS array/object literals — no build step, no frameworks.
-   ========================================================================== */
-
 const PRODUCTS = [
   {
     id: "aurasound-pro-headphones",
