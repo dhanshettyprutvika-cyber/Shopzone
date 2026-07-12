@@ -1,23 +1,3 @@
-/* ==========================================================================
-   ShopZone Product Page
-   Design tokens
-   -------------------------------------------------------------------------
-   Color:
-     --navy      #14213D  header / headings / primary ink
-     --canvas    #FAFAF7  page background
-     --panel     #FFFFFF  card surfaces
-     --teal      #0EA5A0  primary CTA / links / active states
-     --coral     #FF6B4A  deal badges, discounts, urgency
-     --gold      #F5A623  ratings, bestseller
-     --slate     #5B6472  secondary text
-   Type:
-     Display/Headings : Poppins (600/700/800)
-     Body              : Inter
-     Data/Prices/Specs : IBM Plex Mono (numerals only, tabular feel)
-   Signature: sliding "bracket" thumbnail indicator + animated stock
-   urgency meter in the buy box.
-   ========================================================================== */
-
 :root{
   --navy:#14213D;
   --navy-light:#1F2E52;
@@ -69,9 +49,7 @@ h1,h2,h3{ font-family:var(--font-display); margin:0; }
 
 :focus-visible{ outline:3px solid var(--teal); outline-offset:2px; }
 
-/* ==========================================================================
-   Utility bar
-   ========================================================================== */
+
 .utility-bar{
   background:var(--navy);
   color:#C9D2E8;
@@ -86,9 +64,6 @@ h1,h2,h3{ font-family:var(--font-display); margin:0; }
 .utility-bar__right{ opacity:0.85; }
 @media (max-width:700px){ .utility-bar__right{ display:none; } }
 
-/* ==========================================================================
-   Header
-   ========================================================================== */
 .site-header{
   position:sticky; top:0; z-index:200;
   background:var(--navy);
@@ -229,9 +204,7 @@ h1,h2,h3{ font-family:var(--font-display); margin:0; }
   .sub-nav{ display:none; }
 }
 
-/* ==========================================================================
-   Breadcrumb
-   ========================================================================== */
+
 .breadcrumb{ background:var(--panel); border-bottom:1px solid var(--line); }
 .breadcrumb__inner{
   max-width:1500px; margin:0 auto; padding:10px 20px; font-size:12.5px; color:var(--slate);
@@ -241,9 +214,7 @@ h1,h2,h3{ font-family:var(--font-display); margin:0; }
 .breadcrumb__inner i{ font-size:9px; color:var(--slate-light); }
 .breadcrumb__inner span{ color:var(--navy); font-weight:600; }
 
-/* ==========================================================================
-   Product section — 3 column grid
-   ========================================================================== */
+
 main{ max-width:1500px; margin:0 auto; padding:24px 20px 60px; }
 
 .product-section{
@@ -467,9 +438,7 @@ main{ max-width:1500px; margin:0 auto; padding:24px 20px 60px; }
   .buy-box{ position:static; }
 }
 
-/* ==========================================================================
-   Specs table
-   ========================================================================== */
+
 .section-title{ font-size:22px; font-weight:700; margin:44px 0 18px; }
 .specs-table{
   background:var(--panel); border:1px solid var(--line); border-radius:var(--radius-md);
@@ -486,9 +455,7 @@ main{ max-width:1500px; margin:0 auto; padding:24px 20px 60px; }
   .specs-row span:first-child{ border-right:none; border-bottom:1px solid var(--line); padding-bottom:4px; }
 }
 
-/* ==========================================================================
-   Reviews
-   ========================================================================== */
+
 .reviews-summary{
   display:grid; grid-template-columns:220px 1fr; gap:36px;
   background:var(--panel); border:1px solid var(--line); border-radius:var(--radius-md);
@@ -520,9 +487,7 @@ main{ max-width:1500px; margin:0 auto; padding:24px 20px 60px; }
 .helpful-btn:hover{ border-color:var(--teal); color:var(--teal-dark); }
 .helpful-btn.is-voted{ background:#F1FBFA; border-color:var(--teal); color:var(--teal-dark); }
 
-/* ==========================================================================
-   Related products slider
-   ========================================================================== */
+
 .related-slider-wrap{ position:relative; }
 .related-slider{
   display:flex; gap:16px; overflow-x:auto; scroll-behavior:smooth; padding:4px 4px 14px;
@@ -558,9 +523,7 @@ main{ max-width:1500px; margin:0 auto; padding:24px 20px 60px; }
 .slider-arrow--right{ right:-14px; }
 @media (max-width:700px){ .slider-arrow{ display:none; } }
 
-/* ==========================================================================
-   Toast
-   ========================================================================== */
+
 .toast{
   position:fixed; bottom:24px; left:50%; transform:translate(-50%, 20px);
   background:var(--navy); color:white; padding:12px 20px; border-radius:var(--radius-md);
@@ -570,9 +533,7 @@ main{ max-width:1500px; margin:0 auto; padding:24px 20px 60px; }
 .toast.is-visible{ opacity:1; transform:translate(-50%, 0); pointer-events:auto; }
 .toast i{ color:var(--teal); }
 
-/* ==========================================================================
-   Back to top
-   ========================================================================== */
+
 .back-to-top{
   position:fixed; bottom:24px; right:24px; width:44px; height:44px; border-radius:50%;
   background:var(--navy); color:white; display:flex; align-items:center; justify-content:center;
@@ -582,9 +543,6 @@ main{ max-width:1500px; margin:0 auto; padding:24px 20px 60px; }
 .back-to-top.is-visible{ opacity:1; pointer-events:auto; transform:translateY(0); }
 .back-to-top:hover{ background:var(--navy-light); }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
 .site-footer{ background:var(--navy); color:#C9D2E8; margin-top:40px; }
 .site-footer__top{
   width:100%; background:var(--navy-light); color:white; padding:16px; text-align:center;
@@ -614,9 +572,7 @@ main{ max-width:1500px; margin:0 auto; padding:24px 20px 60px; }
   .site-footer__main{ grid-template-columns:1fr; }
 }
 
-/* ==========================================================================
-   Catalog page (index.html)
-   ========================================================================== */
+
 .hero{
   background:linear-gradient(120deg, var(--navy) 0%, var(--navy-light) 100%);
   color:white; padding:44px 20px;
@@ -673,9 +629,7 @@ main{ max-width:1500px; margin:0 auto; padding:24px 20px 60px; }
 .empty-state{ display:none; text-align:center; color:var(--slate); padding:60px 20px; font-size:14.5px; }
 .empty-state.is-visible{ display:block; }
 
-/* ==========================================================================
-   Reduced motion
-   ========================================================================== */
+
 @media (prefers-reduced-motion: reduce){
   *{ transition-duration:0.01ms !important; animation-duration:0.01ms !important; scroll-behavior:auto !important; }
 }
