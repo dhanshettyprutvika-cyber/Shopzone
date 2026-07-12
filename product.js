@@ -1,11 +1,3 @@
-/* ==========================================================================
-   ShopZone — product.js
-   Reads ?id= from the URL, looks up the product in PRODUCTS (products-data.js),
-   and renders the gallery / info / buy-box / specs / reviews / related
-   sections. All interactive behaviour (gallery zoom, option pills, quantity,
-   add to cart, wishlist, helpful votes, related slider) lives here too.
-   ========================================================================== */
-
 (function(){
 
   function getQueryParam(name){
