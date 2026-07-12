@@ -1,9 +1,3 @@
-/* ==========================================================================
-   ShopZone — catalog.js
-   Renders the product grid on index.html, wires up category chips,
-   sort control, and search-term filtering (via ?search= or ?category=).
-   ========================================================================== */
-
 (function(){
 
   function getQueryParam(name){
