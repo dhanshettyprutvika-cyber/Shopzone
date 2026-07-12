@@ -1,11 +1,3 @@
-/* ==========================================================================
-   ShopZone — common.js
-   Shared behaviour for every page: sticky header, mobile menu, search,
-   cart badge (persisted via localStorage so it survives navigation between
-   the catalog and product pages), toast, and back-to-top.
-   Include this BEFORE the page-specific script (catalog.js / product.js).
-   ========================================================================== */
-
 const CART_KEY = "shopzone_cart_count";
 
 function getCartCount(){
